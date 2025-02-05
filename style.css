@@ -289,7 +289,7 @@ h1 {
     }
 }
 
-.portfolio{
+.portfolio {
     background-color: #18233f;
     color: #e2eaff;
     min-height: 100dvh;
@@ -299,11 +299,11 @@ h1 {
     justify-content: space-evenly;
 }
 
-.portfolio_title{
+.portfolio_title {
     font-size: 2.5rem;
 }
 
-.portfolio_project-container{
+.portfolio_project-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -313,7 +313,7 @@ h1 {
     margin: auto;
 }
 
-.portfolio_project{
+.portfolio_project {
     background-image: linear-gradient(#0007, #0008), url('https://picsum.photos/801');
     background-size: cover;
     background-position: center;
@@ -325,26 +325,84 @@ h1 {
 
 }
 
-.portfolio_project-name{
+.portfolio_project-name {
     font-size: 2rem;
     text-shadow: 0px 0px 25px #000;
     color: #fff;
 }
 
-.portfolio_project:hover{
+.portfolio_project:hover {
     opacity: 0.7;
 }
 
 @media screen and (min-width: 600px) {
-    .portfolio_project-container{
+    .portfolio_project-container {
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     }
-    .portfolio_project:first-child{
+
+    .portfolio_project:first-child {
         grid-column: span 2;
         grid-row: span 2;
     }
 
-    .portfolio_project:last-child{
+    .portfolio_project:last-child {
         grid-column: span 4;
     }
+}
+
+.formulary {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.formulary_tittle {
+    font-size: 2.5rem;
+}
+
+.formulary_container {
+    margin: 0;
+    background-color: white;
+    padding: 10px;
+    align-items: center;
+    height: 50dvh;
+    width: 40dvw;
+    border-radius: 15px;
+}
+
+.formulary_form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.formulary_form-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.formulary_form-email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.formulary_form-textarea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.formulary_form-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
 }
