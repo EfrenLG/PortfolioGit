@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../imagenes/logo.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style1.css" />
+    <title>Hollow Knight</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header">
+        <div class="header_logo-container">
+          <img src="../imagenes/logo.webp" alt="Hollow Knight" class="header_logo" />
+        </div>
+        <nav class="header_nav">
+          <ul class="header_nav-list">
+            <li class="header_nav-item"><a id="actually_page" href="./index.html">INICIO</a></li>
+            <li class="header_nav-item"><a href="../lore/lore.html">LORE</a></li>
+            <li class="header_nav-item"><a href="../npcs/npcs.html">NPCs</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="index-wrapper">
+        <div class="index-img">
+          <img src="../imagenes/logo.webp" alt="Hollow Knight" class="" />
+        </div>
+        <div class="index-description">
+          <div class="content-decription">
+            <h1>INTRODUCCIÓN</h1>
+            <div class="content-box-gif">
+              <div class="box-gif"></div>
+            </div>
+            <p>
+              Hollow Knight es un videojuego de acción lateral en 2D
+              desarrollado y publicado por Team Cherry. El desarrollo fue
+              parcialmente financiado como un proyecto Kickstarter que obtuvo 57
+              000 dólares hasta finales de 2014. Fue inicialmente lanzado para
+              Microsoft Windows en febrero de 2017, llegaría también a macOS y
+              Linux en abril de ese mismo año. La versión de Nintendo Switch fue
+              lanzada el 12 de junio de 2018, mientras que las adaptaciones para
+              PlayStation 4 y Xbox One se pusieron a la venta oficialmente tres
+              meses después, el 25 de septiembre de ese mismo año.
+            </p>
+          </div>
+        </div>
+        <div class="index-extensions">
+          <img src="../imagenes/inicio.webp" alt="marco" />
+          <h2>PAQUETES DE CONTENIDO</h2>
+          <ul class="index-extensions-icons">
+            <li class="index-extensions-icon sueños">
+              <img src="../imagenes/ico4.webp" alt="Sueños Ocultos" />
+              <span>Sueños Ocultos</span>
+            </li>
+            <li class="index-extensions-icon grimm">
+              <img src="../imagenes/ico3.webp" alt="La Compañía de Grimm" />
+              <span>La Compañía de Grimm</span>
+            </li>
+            <li class="index-extensions-icon saviavida">
+              <img src="../imagenes/ico2.webp" alt="Saviavida" />
+              <span>Saviavida</span>
+            </li>
+            <li class="index-extensions-icon dioses">
+              <img src="../imagenes/ico1.webp" alt="Buscador de Dioses" />
+              <span>Buscador de Dioses</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    
+    <section class="section-form">
+      <h2>FORMULARIO DEL GAMER</h2>
+      <form action="#" method="post">
+        <label for="nombre"><strong>Nombre del jugador:</strong></label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required />
+
+        <br><br>
+
+        <label for="email"><strong>Correo electrónico:</strong></label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required />
+        
+        <br><br>
+
+        <label for="horas"><strong>Horas jugadas:</strong></label>
+        <input type="number" id="horas" name="horas" min="1" placeholder="Ejemplo: 100" />
+
+        <br><br>
+
+        <label for="fecha"><strong>Fecha en que comenzaste a jugar:</strong></label >
+        <input type="date" id="fecha" name="fecha" />
+
+        <br><br>
+
+        <label><strong>Personaje favorito:</strong></label><br />
+        <input type="radio" id="caballero" name="personaje" value="El Caballero" />
+        <label for="caballero">El Caballero</label>
+        <input type="radio" id="hornet" name="personaje" value="Hornet" />
+        <label for="hornet">Hornet</label>
+        <input type="radio" id="quirrel" name="personaje" value="Quirrel" />
+        <label for="quirrel">Quirrel</label><br />
+
+        <br /><br />
+
+        <label><strong>DLCs que has jugado:</strong></label ><br />
+        <input type="checkbox" id="suenos" name="dlcs" value="Sueños Ocultos" />
+        <label for="suenos">Sueños Ocultos</label>
+        <input type="checkbox" id="grimm" name="dlcs" value="La Compañía de Grimm" />
+        <label for="grimm">La Compañía de Grimm</label>
+        <input type="checkbox" id="saviavida" name="dlcs" value="Saviavida" />
+        <label for="saviavida">Saviavida</label>
+        <input type="checkbox" id="buscador" name="dlcs" value="Buscador de Dioses" />
+        <label for="buscador">Buscador de Dioses</label><br />
+
+        <br /><br />
+
+        <label for="comentarios" ><strong>Comentarios sobre el juego:</strong></label >
+        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Tu opinión sobre Hollow Knight..." ></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <br /><br />
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-links">
+            <ul>
+                <li><a href="./" class="effect-1">Términos de uso</a></li>
+                <li><a href="./" class="effect-2">Política de privacidad</a></li>
+                <li><a href="./" class="effect-3">Acerca de</a></li>
+                <li><a href="./" class="effect-4">Contacto</a></li>
+                <li><a href="./" class="effect-5">Ayuda</a></li>
+                <li><a href="./" class="effect-6">Soporte</a></li>
+            </ul>
+          </div>
+        </div>    
+      <div class="footer-bottom">
+          <p>&copy; 2025 Hollow Knight | Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </body>
+</html>

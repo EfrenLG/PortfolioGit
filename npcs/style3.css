@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #1a1d22;
+    color: #e3e5e5;
+}
+
+body,
+div,
+header,
+ul,
+li,
+a {
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.header {
+    background-image: url("../imagenes/inicio.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.header_nav-list {
+    display: flex;
+    flex-direction: row;
+    height: 10dvh;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.header_nav-item {
+    list-style-type: none;
+    right: 100px;
+    padding: 10px;
+}
+
+.header_nav-item a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+.header_nav-item:hover {
+    background-color: #1a1d22;
+    border-radius: 10px;
+}
+
+.header_logo {
+    max-width: 100%;
+    width: 30dvw;
+}
+
+.header_nav-item>#actually_page {
+    color: #e29e68;
+}
+
+/*MAIN*/
+.index-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    bottom: 80%;
+    margin-top: 30dvh;
+    padding: 20px;
+}
+
+.content-npcs{
+    width: 65%;
+}
+
+.content-npcs h2 {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+.list-npcs-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 220px;
+}
+
+.content-npcs img {
+    width: 180px;
+    height: auto;
+}
+
+.main_logo {
+    max-width: 100%;
+    width: 15dvw !important;
+}
+
+.content-npcs span{
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.list-npcs-service, .list-npcs-wanderers, .list-npcs-others {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+.list-npcs-masters, .list-npcs-quest {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.footer {
+    background-color: #1d1f20;
+    color: white;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 14px;
+    padding: 8px 16px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.effect-1:hover {
+    color: #e29e68;
+}
+
+.effect-2 {
+    position: relative;
+}
+
+.effect-2:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e29e68;
+    animation: underline 0.3s forwards;
+}
+
+@keyframes underline {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.effect-3:hover {
+    transform: scale(2.1);
+}
+
+.effect-4:hover {
+    background-color: #e29e68;
+}
+
+.effect-5:hover {
+    box-shadow: 0 2px 8px #e29e68;
+
+}
+
+.effect-6:hover {
+    border-bottom: 2px solid #e29e68;
+}
+
+@media (min-width: 768px) {
+    .index-wrapper {
+        margin-top: 33dvh;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        text-align: center;
+        align-items: center;
+        font-size: 1.3rem;
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .header_logo {
+        max-width: 100%;
+        width: 15dvw;
+    }
+
+    .index-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        bottom: 80%;
+        margin-top: 18dvh;
+        padding: 20px;
+    }
+}
